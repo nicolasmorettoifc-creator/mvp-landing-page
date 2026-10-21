@@ -1,3 +1,4 @@
+
 const menuBtn = document.getElementById("menuBtn");
 const links = document.getElementById("links");
 
@@ -16,8 +17,12 @@ const mensagem = document.getElementById("mensagem");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault();
+
   const nome = document.getElementById("nome").value.trim();
 
-  mensagem.textContent = "Obrigado, " + nome + "! Este formulário é demonstrativo e ainda não envia os dados.";
+  mensagem.textContent =
+    "Obrigado, " + nome +
+    "! Este formulário é demonstrativo e ainda não envia os dados.";
+
   form.reset();
 });
